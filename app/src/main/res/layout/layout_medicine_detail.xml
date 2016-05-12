@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+        <TableRow>
+            <TextView
+                android:text="药名"
+                android:textSize="@dimen/detail_size"
+                />
+            <TextView
+                android:id="@+id/medicineDetailName"
+                android:textSize="@dimen/detail_size"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+        <TableRow>
+            <TextView
+                android:text="服用方式"
+                android:textSize="@dimen/detail_size"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/medicineDetailWay"
+                android:textSize="@dimen/detail_size"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+        <TableRow>
+            <TextView
+                android:text="用量"
+                android:textSize="@dimen/detail_size"
+                />
+            <TextView
+                android:id="@+id/medicineDetailNumber"
+                android:textSize="@dimen/detail_size"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+
+        <TableRow>
+            <TextView
+                android:text="次数"
+                android:textSize="@dimen/detail_size"
+                />
+            <TextView
+                android:id="@+id/medicineDetailCount"
+                android:textSize="@dimen/detail_size"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+        <TableRow>
+            <TextView
+                android:text="时间"
+                android:textSize="@dimen/detail_size"
+                />
+            <TextView
+                android:id="@+id/medicineDetailTime"
+                android:textSize="@dimen/detail_size"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+
+
+        <TextView
+            android:text="成分"
+            android:textSize="@dimen/detail_size" />
+
+        <TextView
+            android:id="@+id/medicineDetailElement"
+            android:textSize="@dimen/detail_size"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+        <TextView
+            android:text="适应症"
+            android:textSize="@dimen/detail_size" />
+
+        <TextView
+            android:id="@+id/medicineDetailIndication"
+            android:textSize="@dimen/detail_size"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+
+
+        <TextView
+            android:text="不良反应"
+            android:textSize="@dimen/detail_size"
+            />
+        <TextView
+            android:id="@+id/medicineDetailReaction"
+            android:textSize="@dimen/detail_size"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+
+
+        <TextView
+            android:text="用药禁忌"
+            android:textSize="@dimen/detail_size"
+            />
+        <TextView
+            android:id="@+id/medicineDetailTaboo"
+            android:textSize="@dimen/detail_size"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+
+
+        <TextView
+            android:text="注意事项"
+            android:textSize="@dimen/detail_size"
+            />
+        <TextView
+            android:id="@+id/medicineDetailAttention"
+            android:textSize="@dimen/detail_size"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lineWidth"
+            android:background="@color/colorBlack"
+            />
+
+
+        <TextView
+            android:text="药品说明"
+            android:textSize="@dimen/detail_size"
+            />
+        <TextView
+            android:id="@+id/medicineDetailDirection"
+            android:textSize="@dimen/detail_size"
+            />
+    </TableLayout>
+    </ScrollView>
+</LinearLayout>

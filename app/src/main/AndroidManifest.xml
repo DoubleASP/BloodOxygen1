@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.welling.kinghacker.activities">
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/helper"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.welling.kinghacker.activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.welling.kinghacker.activities.HomeActivity"/>
+        <activity android:name="com.welling.kinghacker.activities.BloodSugerActivity"/>
+        <activity android:name=".ChangePasswordActivity"/>
+        <activity android:name=".AboutActivity"/>
+        <activity android:name=".SettingActivity"/>
+        <activity android:name=".InformationActivity"/>
+        <activity android:name=".BloodPressureActivity"/>
+        <activity android:name=".BloodOxygenActivity"/>
+        <activity android:name=".ElectorDragramActivity"/>
+        <activity android:name=".HeartAllActivity"/>
+        <activity android:name=".RegisterActivity"/>
+
+        <activity android:name=".BloodOxygenUploadActivity"/>
+        <activity android:name=".MedicineDetailActivity"/>
+        <activity android:name=".DoctorDetailActivity"/>
+        <activity android:name=".MainDoctorActivity"/>
+        <activity android:name=".MedicionActicity"/>
+        <activity android:name=".MTWebViewActivity"/>
+
+        <activity android:name="com.example.bluetooth.le.DeviceScanActivity"/>
+        <activity android:name="com.example.bluetooth.le.DeviceControlActivity"/>
+        <service android:name="com.example.bluetooth.le.BluetoothLeService" android:enabled="true"/>
+
+    </application>
+
+</manifest>
