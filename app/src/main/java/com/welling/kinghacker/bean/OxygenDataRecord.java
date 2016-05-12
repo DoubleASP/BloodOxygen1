@@ -21,10 +21,12 @@ public class OxygenDataRecord extends MTBean {
             TABLENAME = "OxygenDataRecord",
             UPDATETIME ="UpdateTime",
             OXYGENVALUE = "OxygenValue",
+            ISUPDATE = "isupdate",
             BMPVALUE = "bmpValue";
 
     public String updatetime;
     public int oxygenvalue;
+    public int isUpdate = NO;
     public int bmpvalue;
     public OxygenDataRecord(Context context){
         super(context);
@@ -45,6 +47,7 @@ public class OxygenDataRecord extends MTBean {
         cv.put(UPDATETIME,updatetime);
         cv.put(OXYGENVALUE,oxygenvalue);
         cv.put(BMPVALUE, bmpvalue);
+        cv.put(ISUPDATE,isUpdate);
         manager.insert(TABLENAME, cv);
        // Log.i("123", "数据插入成功");
     }
@@ -55,6 +58,7 @@ public class OxygenDataRecord extends MTBean {
         items.add(new TableItem(UPDATETIME, TableItem.M_VARCHAR, 50));
         items.add(new TableItem(OXYGENVALUE, TableItem.M_INTEGER));
         items.add(new TableItem(BMPVALUE, TableItem.M_INTEGER));
+        items.add(new TableItem(ISUPDATE, TableItem.M_INTEGER));
         manager.createTable(TABLENAME, items);
        // Log.i("123", "表创建成功");
     }
